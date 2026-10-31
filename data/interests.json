@@ -1,18 +1,22 @@
 [
   {
-    "name": "Power systems & smart grids",
-    "detail": "Grid operation, flexibility, microgrids and the integration of variable renewable resources."
-  },
-  {
-    "name": "Renewable energy integration",
+    "name": "Renewable Energy Integration & Sustainable Energy Systems",
     "detail": "Solar PV, hybrid renewable systems and pathways toward reliable, low-carbon power."
   },
   {
-    "name": "Building energy performance",
-    "detail": "Simulation-based assessment of glazing, cooling demand and building-envelope performance."
+    "name": "Power Systems, Smart Grids & Microgrids",
+    "detail": "Grid operation, flexibility, microgrids and the integration of variable renewable resources."
   },
   {
-    "name": "Energy modelling & sustainability",
-    "detail": "Computational analysis, engineering simulation and experimental evaluation of energy technologies."
+    "name": "Building Energy Efficiency & Simulation",
+    "detail": "Building energy modelling, thermal performance assessment, energy-efficient glazing and cooling demand optimization."
+  },
+  {
+    "name": "Nuclear Energy & Reactor Technology",
+    "detail": "Nuclear power generation, reactor safety, thermal-hydraulic analysis and advanced nuclear energy technologies."
+  },
+  {
+    "name": "Biofuels, Fuel Conversion & Alternative Energy",
+    "detail": "Biodiesel production, sustainable fuel conversion, process optimization and characterization of alternative fuel feedstocks."
   }
 ]
