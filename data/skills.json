@@ -2,8 +2,7 @@
   {
     "group": "Simulation & energy systems",
     "items": [
-      "DesignBuilder",
-      "EnergyPlus",
+      "DesignBuilder (EnergyPlus)",
       "PCTRAN",
       "ANSYS Workbench",
       "EES",
@@ -17,9 +16,7 @@
       "Python",
       "Google Colab",
       "MATLAB",
-      "Microsoft Excel",
-      "Scientific visualization",
-      "Thermodynamic modelling"
+      "Microsoft Excel"
     ]
   },
   {
