@@ -1,0 +1,145 @@
+[
+  {
+    "title": "Aerogel-integrated glazing for lower building cooling demand",
+    "kind": "Research",
+    "topic": "Building energy",
+    "year": "2026",
+    "featured": true,
+    "summary": "Compared single, double and aerogel-integrated glazing in a simulated multi-storey commercial office building in Dhaka.",
+    "approach": "Developed comparative DesignBuilder/EnergyPlus cases and examined cooling electricity, solar gains and glazing thermal characteristics.",
+    "outcome": "The aerogel-integrated case showed approximately 4.0% lower annual cooling electricity than single glazing in the analysed model.",
+    "metric": "4.0%",
+    "metricLabel": "modelled cooling electricity reduction",
+    "tools": [
+      "DesignBuilder",
+      "EnergyPlus",
+      "Building energy modelling",
+      "Python"
+    ],
+    "visual": "glazing",
+    "link": "",
+    "image": ""
+  },
+  {
+    "title": "Biodiesel from blended jojoba and sesbania oils",
+    "kind": "Thesis",
+    "topic": "Experimental research",
+    "year": "2026",
+    "featured": true,
+    "summary": "Undergraduate thesis investigating non-edible oils and their blends as feedstocks for biodiesel production and characterization.",
+    "approach": "Conducted extraction, esterification, transesterification and fuel-property characterization with comparisons to biodiesel standards.",
+    "outcome": "Evaluated how feedstock composition influenced selected fuel properties; completed and defended undergraduate thesis.",
+    "metric": "B.Sc.",
+    "metricLabel": "completed undergraduate thesis",
+    "tools": [
+      "Laboratory experimentation",
+      "Fuel characterization",
+      "ASTM / EN standards",
+      "Data analysis"
+    ],
+    "visual": "molecule",
+    "link": "",
+    "image": ""
+  },
+  {
+    "title": "Portable solar-powered power bank",
+    "kind": "Project",
+    "topic": "Solar energy",
+    "year": "Undergraduate project",
+    "featured": true,
+    "summary": "Designed and constructed a portable charging prototype using a small photovoltaic panel and rechargeable battery storage.",
+    "approach": "Integrated a 0.75 W solar panel with a 7000 mAh storage unit for a compact energy application.",
+    "outcome": "Demonstrated a hands-on application of solar harvesting and battery-based portable power.",
+    "metric": "0.75 W",
+    "metricLabel": "prototype PV panel",
+    "tools": [
+      "Solar photovoltaics",
+      "Battery storage",
+      "Circuit prototyping"
+    ],
+    "visual": "solar",
+    "link": "",
+    "image": ""
+  },
+  {
+    "title": "Recuperative Organic Rankine Cycle analysis",
+    "kind": "Simulation",
+    "topic": "Thermal systems",
+    "year": "Academic project",
+    "featured": false,
+    "summary": "Energetic and exergetic evaluation of a recuperative Organic Rankine Cycle.",
+    "approach": "Modelled and cross-checked thermodynamic performance using Engineering Equation Solver and Python.",
+    "outcome": "Examined system performance through energy and exergy calculations.",
+    "metric": "EES + Python",
+    "metricLabel": "simulation tools",
+    "tools": [
+      "EES",
+      "Python",
+      "Thermodynamics",
+      "Exergy analysis"
+    ],
+    "visual": "cycle",
+    "link": "",
+    "image": ""
+  },
+  {
+    "title": "PCTRAN nuclear power plant transient analysis",
+    "kind": "Simulation",
+    "topic": "Power generation",
+    "year": "Academic project",
+    "featured": false,
+    "summary": "Comparative analysis of break sizes between hot and cold legs under loss of AC power scenarios.",
+    "approach": "Used PCTRAN to examine modelled plant behaviour under specified transient conditions.",
+    "outcome": "Practised simulation-based evaluation of complex power-plant responses.",
+    "metric": "PCTRAN",
+    "metricLabel": "simulation environment",
+    "tools": [
+      "PCTRAN",
+      "Transient analysis",
+      "Nuclear power engineering"
+    ],
+    "visual": "cycle",
+    "link": "",
+    "image": ""
+  },
+  {
+    "title": "Heat- and smoke-sensor fire alarm prototype",
+    "kind": "Project",
+    "topic": "Electronics",
+    "year": "Academic project",
+    "featured": false,
+    "summary": "Modelled a fire-alert circuit with heat and smoke detection and an LCD display.",
+    "approach": "Designed and simulated the sensor-integrated circuit in Tinkercad.",
+    "outcome": "Combined sensor interfacing, basic logic and visual alert output.",
+    "metric": "Sensors",
+    "metricLabel": "heat and smoke detection",
+    "tools": [
+      "Tinkercad",
+      "Arduino",
+      "Electronics"
+    ],
+    "visual": "circuit",
+    "link": "",
+    "image": ""
+  },
+  {
+    "title": "Solar cell and photovoltaic panel simulation",
+    "kind": "Simulation",
+    "topic": "Solar energy",
+    "year": "Academic project",
+    "featured": false,
+    "summary": "Simulated solar-cell and panel behaviour through a MATLAB/Simulink model.",
+    "approach": "Used block-based simulation to explore photovoltaic system characteristics.",
+    "outcome": "Developed foundational modelling experience in solar energy applications.",
+    "metric": "Simulink",
+    "metricLabel": "modelling environment",
+    "tools": [
+      "MATLAB",
+      "Simulink",
+      "Solar photovoltaics"
+    ],
+    "visual": "solar",
+    "link": "",
+    "image": ""
+  }
+]

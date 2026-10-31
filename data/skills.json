@@ -1,0 +1,47 @@
+[
+  {
+    "group": "Simulation & energy systems",
+    "items": [
+      "DesignBuilder",
+      "EnergyPlus",
+      "PCTRAN",
+      "ANSYS Workbench",
+      "EES",
+      "ASPEN HYSYS",
+      "MATLAB / Simulink"
+    ]
+  },
+  {
+    "group": "Programming & analysis",
+    "items": [
+      "Python",
+      "Google Colab",
+      "MATLAB",
+      "Microsoft Excel",
+      "Scientific visualization",
+      "Thermodynamic modelling"
+    ]
+  },
+  {
+    "group": "Design & prototyping",
+    "items": [
+      "SolidWorks",
+      "CAD",
+      "Arduino",
+      "Tinkercad",
+      "LOGO! Soft Comfort",
+      "Revit"
+    ]
+  },
+  {
+    "group": "Research & communication",
+    "items": [
+      "Technical writing",
+      "Research figures",
+      "Microsoft Office",
+      "LaTeX",
+      "Canva",
+      "draw.io"
+    ]
+  }
+]

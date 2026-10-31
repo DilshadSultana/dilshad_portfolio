@@ -1,0 +1,292 @@
+media:
+- name: images
+  label: Project images
+  input: assets/uploads
+  output: assets/uploads
+  extensions:
+  - png
+  - jpg
+  - jpeg
+  - webp
+  - gif
+- name: docs
+  label: Documents & CV
+  input: assets/uploads
+  output: assets/uploads
+  categories:
+  - document
+content:
+- name: profile
+  label: Profile & contact
+  type: file
+  path: data/profile.json
+  format: json
+  fields:
+  - name: name
+    label: Name
+    type: string
+  - name: heroImage
+    label: Homepage portrait
+    type: image
+    options:
+      media: images
+  - name: heroRoleLabel
+    label: Homepage academic label
+    type: string
+  - name: initials
+    label: Initials
+    type: string
+  - name: role
+    label: Role
+    type: string
+  - name: eyebrow
+    label: Eyebrow
+    type: string
+  - name: headline
+    label: Headline
+    type: string
+  - name: heroDescription
+    label: Hero description
+    type: text
+  - name: location
+    label: Location
+    type: string
+  - name: email
+    label: Email
+    type: string
+  - name: linkedIn
+    label: Linked in
+    type: string
+  - name: github
+    label: Github
+    type: string
+  - name: cvUrl
+    label: Cv url
+    type: file
+    options:
+      media: docs
+  - name: previousPortfolio
+    label: Previous portfolio
+    type: string
+  - name: availability
+    label: Availability
+    type: string
+  - name: aboutLead
+    label: About lead
+    type: text
+  - name: about
+    label: About
+    type: string
+    list: true
+  - name: stats
+    label: Stats
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label} — {value}'
+    fields:
+    - name: value
+      label: Value
+      type: string
+    - name: label
+      label: Label
+      type: string
+- name: education
+  label: Education & coursework
+  type: file
+  path: data/education.json
+  format: json
+  fields:
+  - name: degree
+    label: Degree
+    type: string
+  - name: school
+    label: School
+    type: string
+  - name: period
+    label: Period
+    type: string
+  - name: cgpa
+    label: Cgpa
+    type: string
+  - name: recentGpa
+    label: Recent gpa
+    type: string
+  - name: courses
+    label: Courses
+    type: string
+    list: true
+- name: interests
+  label: Research interests
+  type: file
+  path: data/interests.json
+  format: json
+  list: true
+  fields:
+  - name: name
+    label: Name
+    type: string
+  - name: detail
+    label: Detail
+    type: text
+- name: projects
+  label: Research & engineering projects
+  type: file
+  path: data/projects.json
+  format: json
+  list: true
+  fields:
+  - name: title
+    label: Title
+    type: string
+  - name: kind
+    label: Kind
+    type: select
+    options:
+      values:
+      - Research
+      - Thesis
+      - Simulation
+      - Project
+  - name: topic
+    label: Topic
+    type: string
+  - name: year
+    label: Year
+    type: string
+  - name: featured
+    label: Featured
+    type: boolean
+  - name: summary
+    label: Summary
+    type: text
+  - name: approach
+    label: Approach
+    type: text
+  - name: outcome
+    label: Outcome
+    type: text
+  - name: metric
+    label: Metric
+    type: string
+  - name: metricLabel
+    label: Metric label
+    type: string
+  - name: tools
+    label: Tools
+    type: string
+    list: true
+  - name: visual
+    label: Visual
+    type: select
+    options:
+      values:
+      - glazing
+      - molecule
+      - solar
+      - cycle
+      - circuit
+  - name: image
+    label: Image
+    type: image
+    options:
+      media: images
+  - name: link
+    label: Link
+    type: string
+- name: publications
+  label: Publications & manuscripts
+  type: file
+  path: data/publications.json
+  format: json
+  list: true
+  fields:
+  - name: type
+    label: Type
+    type: string
+  - name: status
+    label: Status
+    type: string
+  - name: title
+    label: Title
+    type: string
+  - name: note
+    label: Note
+    type: text
+  - name: year
+    label: Year
+    type: string
+  - name: link
+    label: Link
+    type: file
+    options:
+      media: docs
+- name: experience
+  label: Experience & leadership
+  type: file
+  path: data/experience.json
+  format: json
+  list: true
+  fields:
+  - name: year
+    label: Year
+    type: string
+  - name: role
+    label: Role
+    type: string
+  - name: place
+    label: Place
+    type: string
+  - name: description
+    label: Description
+    type: text
+- name: training
+  label: Training & visits
+  type: file
+  path: data/training.json
+  format: json
+  list: true
+  fields:
+  - name: name
+    label: Name
+    type: string
+  - name: source
+    label: Source
+    type: string
+  - name: year
+    label: Year
+    type: string
+  - name: detail
+    label: Detail
+    type: string
+- name: skills
+  label: Technical skills
+  type: file
+  path: data/skills.json
+  format: json
+  list: true
+  fields:
+  - name: group
+    label: Group
+    type: string
+  - name: items
+    label: Items
+    type: string
+    list: true
+- name: recognition
+  label: Awards & activities
+  type: file
+  path: data/recognition.json
+  format: json
+  list: true
+  fields:
+  - name: title
+    label: Title
+    type: string
+  - name: detail
+    label: Detail
+    type: text
+  - name: year
+    label: Year
+    type: string

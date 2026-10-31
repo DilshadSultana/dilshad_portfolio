@@ -1,0 +1,36 @@
+{
+  "name": "Dilshad Sultana",
+  "initials": "DS",
+  "role": "Energy Science & Engineering Graduate",
+  "eyebrow": "Energy Science & Engineering",
+  "headline": "Researching better energy futures.",
+  "heroDescription": "An engineering foundation, a research mindset, and a direction toward renewable integration.",
+  "location": "Bangladesh",
+  "email": "dilshadsultana6660@gmail.com",
+  "linkedIn": "",
+  "github": "",
+  "cvUrl": "",
+  "previousPortfolio": "https://sites.google.com/stud.kuet.ac.bd/dilshadacademicportfolio/home",
+  "availability": "Open to funded MSc research opportunities · 2027",
+  "aboutLead": "An engineering foundation, a research mindset, and a direction toward renewable integration.",
+  "about": [
+    "I completed my B.Sc. in Energy Science and Engineering at Khulna University of Engineering & Technology (KUET) in August 2026. My undergraduate work combined experimental energy research, building simulation, modelling and project-based engineering.",
+    "My next academic goal is to deepen my expertise in power systems, smart grids and renewable energy integration. I am interested in graduate research that connects rigorous analysis with practical energy-sector challenges."
+  ],
+  "stats": [
+    {
+      "value": "2026",
+      "label": "KUET graduate"
+    },
+    {
+      "value": "07",
+      "label": "Research & technical projects"
+    },
+    {
+      "value": "03",
+      "label": "University merit scholarships"
+    }
+  ],
+  "heroImage": "assets/dilshad-portrait.webp",
+  "heroRoleLabel": "Energy Science & Engineering · KUET · Bangladesh"
+}
