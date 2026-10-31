@@ -1,14 +1,11 @@
 [
   {
-    "title": "Aerogel-integrated glazing for lower building cooling demand",
-    "kind": "Research",
+    "title": "Thermal Performance Assessment of Aerogel-Integrated Glazing System  for Reduced Solar Heat Gain in Building ",
+    "kind": "Simulation",
     "topic": "Building energy",
-    "year": "2026",
+    "year": "2025",
     "featured": true,
-    "summary": "Compared single, double and aerogel-integrated glazing in a simulated multi-storey commercial office building in Dhaka.",
     "approach": "Developed comparative DesignBuilder/EnergyPlus cases and examined cooling electricity, solar gains and glazing thermal characteristics.",
-    "outcome": "The aerogel-integrated case showed approximately 4.0% lower annual cooling electricity than single glazing in the analysed model.",
-    "metric": "4.0%",
     "metricLabel": "modelled cooling electricity reduction",
     "tools": [
       "DesignBuilder",
@@ -17,8 +14,8 @@
       "Python"
     ],
     "visual": "glazing",
-    "link": "",
-    "image": ""
+    "image": "assets/uploads/Screenshot 2026-11-01 001246.png",
+    "link": "https://drive.google.com/file/d/1HZkLVJSejqUNIUc67azmPmiNz2j3vScn/view?usp=drive_link"
   },
   {
     "title": "Biodiesel from blended jojoba and sesbania oils",
@@ -38,8 +35,8 @@
       "Data analysis"
     ],
     "visual": "molecule",
-    "link": "",
-    "image": ""
+    "image": "assets/uploads/hope presentation.png",
+    "link": "https://drive.google.com/file/d/1HElguLW-rxCVISLeU7H30RbjL2cLwwzs/view?usp=drive_link"
   },
   {
     "title": "Portable solar-powered power bank",
@@ -58,15 +55,15 @@
       "Circuit prototyping"
     ],
     "visual": "solar",
-    "link": "",
-    "image": ""
+    "image": "assets/uploads/Power bank.jpg",
+    "link": "https://drive.google.com/file/d/1CnayAWij0qFlt9JujGj-s9NX2_Z9PZTO/view?usp=drive_link"
   },
   {
     "title": "Recuperative Organic Rankine Cycle analysis",
     "kind": "Simulation",
     "topic": "Thermal systems",
     "year": "Academic project",
-    "featured": false,
+    "featured": true,
     "summary": "Energetic and exergetic evaluation of a recuperative Organic Rankine Cycle.",
     "approach": "Modelled and cross-checked thermodynamic performance using Engineering Equation Solver and Python.",
     "outcome": "Examined system performance through energy and exergy calculations.",
@@ -79,15 +76,15 @@
       "Exergy analysis"
     ],
     "visual": "cycle",
-    "link": "",
-    "image": ""
+    "image": "assets/uploads/Screenshot 2026-09-07 224225.png",
+    "link": "https://drive.google.com/file/d/1_4CZL1O2CLvT1tYv-bUiv1IL83juDs8W/view?usp=drive_link"
   },
   {
     "title": "PCTRAN nuclear power plant transient analysis",
     "kind": "Simulation",
     "topic": "Power generation",
     "year": "Academic project",
-    "featured": false,
+    "featured": true,
     "summary": "Comparative analysis of break sizes between hot and cold legs under loss of AC power scenarios.",
     "approach": "Used PCTRAN to examine modelled plant behaviour under specified transient conditions.",
     "outcome": "Practised simulation-based evaluation of complex power-plant responses.",
@@ -99,15 +96,15 @@
       "Nuclear power engineering"
     ],
     "visual": "cycle",
-    "link": "",
-    "image": ""
+    "image": "assets/uploads/Screenshot 2026-09-07 223507.png",
+    "link": "https://drive.google.com/file/d/1ee5vVQWknkEaee385iCddmZuC2j6Rpe2/view?usp=drive_link"
   },
   {
     "title": "Heat- and smoke-sensor fire alarm prototype",
     "kind": "Project",
     "topic": "Electronics",
     "year": "Academic project",
-    "featured": false,
+    "featured": true,
     "summary": "Modelled a fire-alert circuit with heat and smoke detection and an LCD display.",
     "approach": "Designed and simulated the sensor-integrated circuit in Tinkercad.",
     "outcome": "Combined sensor interfacing, basic logic and visual alert output.",
@@ -119,15 +116,15 @@
       "Electronics"
     ],
     "visual": "circuit",
-    "link": "",
-    "image": ""
+    "image": "assets/uploads/WhatsApp Image 2026-11-01 at 00.20.30.jpeg",
+    "link": "https://drive.google.com/file/d/1f_BAmnVzI_I-Tv3uyS3zT1YBEdP33us7/view?usp=drive_link"
   },
   {
     "title": "Solar cell and photovoltaic panel simulation",
     "kind": "Simulation",
     "topic": "Solar energy",
     "year": "Academic project",
-    "featured": false,
+    "featured": true,
     "summary": "Simulated solar-cell and panel behaviour through a MATLAB/Simulink model.",
     "approach": "Used block-based simulation to explore photovoltaic system characteristics.",
     "outcome": "Developed foundational modelling experience in solar energy applications.",
@@ -139,7 +136,13 @@
       "Solar photovoltaics"
     ],
     "visual": "solar",
-    "link": "",
-    "image": ""
+    "image": "assets/uploads/WhatsApp Image 2026-11-01 at 00.29.38.jpeg",
+    "link": "https://drive.google.com/file/d/1YKPukSTxG_kav0MNCwfrORmRPawz22_E/view?usp=drive_link"
+  },
+  {
+    "featured": true,
+    "visual": "circuit",
+    "image": "assets/uploads/Screenshot 2026-09-08 122718.png",
+    "link": "https://drive.google.com/file/d/1cHbsLV0hk68Q4SbtC0jrAEmrdI6VyBrv/view?usp=drive_link"
   }
 ]
