@@ -19,8 +19,14 @@
   },
   {
     "name": "Industrial visits",
-    "source": "Atomic Energy Research Establishment; HAMKO and Abdullah Battery Company Limited",
-    "year": "Academic",
+    "source": "Atomic Energy Research Establishment",
+    "year": "2026",
     "detail": "Site visits"
+  },
+  {
+    "name": "Industrial visits",
+    "source": " HAMKO and Abdullah Battery Company Limited",
+    "year": "2024",
+    "detail": "Site Visit"
   }
 ]
