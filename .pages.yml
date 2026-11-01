@@ -1,3 +1,4 @@
+
 media:
 - name: images
   label: Project images
@@ -60,15 +61,26 @@ content:
   - name: github
     label: Github
     type: string
-  - - name: googleScholar
-  label: Google Scholar URL
-  type: string
-- name: orcid
-  label: ORCID URL
-  type: string
-- name: cvUrl
-  label: Google Drive CV URL
-  type: string
+  - name: googleScholar
+    label: Google Scholar URL
+    type: string
+  - name: orcid
+    label: ORCID URL
+    type: string
+  - name: cvUrl
+    label: Google Drive CV URL
+    type: string
+  - name: extraLinks
+    label: Additional professional links
+    type: object
+    list: true
+    fields:
+    - name: label
+      label: Link name
+      type: string
+    - name: url
+      label: Link URL
+      type: string
   - name: previousPortfolio
     label: Previous portfolio
     type: string
