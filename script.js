@@ -3,6 +3,10 @@
   const d = window.PORTFOLIO_DATA;
   if (!d) { document.body.insertAdjacentText('afterbegin', 'Portfolio data is missing. Please restore content.js.'); return; }
   const $ = id => document.getElementById(id);
+  const ui=(key,original)=>{
+    const candidate=window.PORTFOLIO_EDIT_TEXT?.interface?.[key];
+    return typeof candidate==='string' ? candidate : original;
+  };
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const attr = esc;
   const safeUrl = value => {let x=String(value||'').trim();if(x.startsWith('/assets/uploads/'))x=x.slice(1);return /^(https?:\/\/|mailto:|\.\/|\/|assets\/)/i.test(x)?esc(x):'';};
@@ -17,25 +21,31 @@
   $('stats-grid').innerHTML=d.stats.map(s=>`<div class="stat"><strong>${esc(s.value)}</strong><span>${esc(s.label)}</span></div>`).join('');
   $('course-grid').innerHTML=d.education.courses.map(s=>`<span>${esc(s)}</span>`).join('');
   $('interests-list').innerHTML=d.interests.map((s,i)=>`<a class="interest-row" href="#projects"><span class="interest-number">0${i+1}</span><h3>${esc(s.name)}</h3><p>${esc(s.detail)}</p><span class="interest-arrow" aria-hidden="true">↗</span></a>`).join('');
-  const filters=['All work','Research','Thesis','Simulation','Project'];
+  const filters=[
+    {key:'All work', label:ui('filterAll','All work')},
+    {key:'Research', label:ui('filterResearch','Research')},
+    {key:'Thesis', label:ui('filterThesis','Thesis')},
+    {key:'Simulation', label:ui('filterSimulation','Simulation')},
+    {key:'Project', label:ui('filterProject','Project')}
+  ];
   let selectedFilter='All work';
   function renderProjects(){
-    $('project-filters').innerHTML=filters.map(f=>`<button type="button" class="filter-button ${f===selectedFilter?'active':''}" data-filter="${attr(f)}" aria-pressed="${f===selectedFilter}">${esc(f)}</button>`).join('');
+    $('project-filters').innerHTML=filters.map(f=>`<button type="button" class="filter-button ${f.key===selectedFilter?'active':''}" data-filter="${attr(f.key)}" aria-pressed="${f.key===selectedFilter}">${esc(f.label)}</button>`).join('');
     const projects = d.projects.filter(p=>selectedFilter==='All work'||p.kind===selectedFilter);
     $('project-grid').innerHTML=projects.map((p,i)=>{
       const cls=p.featured?'feature-card':'small-card';
       const graphic=p.visual||'cycle';
       const uploadedImage=safeUrl(p.image);
-      return `<button type="button" class="project-card ${cls}" data-project-id="${attr(p.id)}" aria-label="Read about ${attr(p.title)}">
+      return `<button type="button" class="project-card ${cls}" data-project-id="${attr(p.id)}" aria-label="${attr(ui('projectAria','Read about'))} ${attr(p.title)}">
         <div class="project-card-top"><span>${esc(p.number)} / ${esc(p.kind)}</span><span class="card-arrow">↗</span></div>
         <div class="project-graphic graphic-${attr(graphic)}" aria-hidden="true">${uploadedImage?`<img class="project-photo" src="${uploadedImage}" alt="" loading="lazy">`: ''}<span class="graphic-ring one"></span><span class="graphic-ring two"></span><span class="graphic-cross"></span><span class="graphic-identifier">${esc(p.number)} — ${esc(p.topic)}</span></div>
-        <div class="project-card-body"><div class="project-tags"><span>${esc(p.topic)}</span><span>${esc(p.year)}</span></div><h3>${esc(p.title)}</h3><p>${esc(p.summary)}</p><div class="project-card-bottom"><span class="project-metric">${esc(p.metric)}</span><span>${esc(p.metricLabel)}</span><span class="view-detail">Explore →</span></div></div>
+        <div class="project-card-body"><div class="project-tags"><span>${esc(p.topic)}</span><span>${esc(p.year)}</span></div><h3>${esc(p.title)}</h3><p>${esc(p.summary)}</p><div class="project-card-bottom"><span class="project-metric">${esc(p.metric)}</span><span>${esc(p.metricLabel)}</span><span class="view-detail">${esc(ui('explore','Explore →'))}</span></div></div>
       </button>`;
     }).join('');
   }
   function openProject(id){
     const p=d.projects.find(x=>x.id===id); if(!p)return;
-    $('dialog-content').innerHTML=`<p class="section-eyebrow">${esc(p.kind)} / ${esc(p.year)} / ${esc(p.topic)}</p><h2 id="dialog-title">${esc(p.title)}</h2><p class="dialog-summary">${esc(p.summary)}</p>${safeUrl(p.image)?`<img class="dialog-project-image" src="${safeUrl(p.image)}" alt="Visual documentation for ${attr(p.title)}" loading="lazy">`: ''}<div class="dialog-divider"></div><div class="dialog-section"><span>01 / Approach</span><p>${esc(p.approach)}</p></div><div class="dialog-section"><span>02 / Outcome</span><p>${esc(p.outcome)}</p></div><div class="dialog-section"><span>03 / Tools and methods</span><div class="dialog-tags">${p.tools.map(t=>`<span>${esc(t)}</span>`).join('')}</div></div>${safeUrl(p.link)?`<a class="button button-dark" target="_blank" rel="noopener noreferrer" href="${safeUrl(p.link)}">Open project document ↗</a>`:''}`;
+    $('dialog-content').innerHTML=`<p class="section-eyebrow">${esc(p.kind)} / ${esc(p.year)} / ${esc(p.topic)}</p><h2 id="dialog-title">${esc(p.title)}</h2><p class="dialog-summary">${esc(p.summary)}</p>${safeUrl(p.image)?`<img class="dialog-project-image" src="${safeUrl(p.image)}" alt="${attr(ui('imageAria','Visual documentation for'))} ${attr(p.title)}" loading="lazy">`: ''}<div class="dialog-divider"></div><div class="dialog-section"><span>${esc(ui('projectApproach','01 / Approach'))}</span><p>${esc(p.approach)}</p></div><div class="dialog-section"><span>${esc(ui('projectOutcome','02 / Outcome'))}</span><p>${esc(p.outcome)}</p></div><div class="dialog-section"><span>${esc(ui('projectTools','03 / Tools and methods'))}</span><div class="dialog-tags">${p.tools.map(t=>`<span>${esc(t)}</span>`).join('')}</div></div>${safeUrl(p.link)?`<a class="button button-dark" target="_blank" rel="noopener noreferrer" href="${safeUrl(p.link)}">${esc(ui('projectOpen','Open project document ↗'))}</a>`:''}`;
     const dialog=$('project-dialog');
     if(typeof dialog.showModal==='function')dialog.showModal(); else dialog.setAttribute('open','');
     document.body.classList.add('dialog-open');
@@ -48,17 +58,17 @@
   $('dialog-close').addEventListener('click',closeDialog);
   dialog.addEventListener('click',e=>{if(e.target===dialog)closeDialog();});
   dialog.addEventListener('close',()=>document.body.classList.remove('dialog-open'));
-  $('publication-list').innerHTML=d.publications.map((p,i)=>`<article class="publication-row"><div class="publication-num">0${i+1}</div><div><p class="publication-type">${esc(p.type)} · ${esc(p.year)}</p><h3>${esc(p.title)}</h3><p class="publication-note">${esc(p.note)}</p>${safeUrl(p.link)?`<a class="publication-resource" href="${safeUrl(p.link)}" target="_blank" rel="noopener noreferrer">View document ↗</a>`:''}</div><span class="status-pill">${esc(p.status)}</span></article>`).join('');
+  $('publication-list').innerHTML=d.publications.map((p,i)=>`<article class="publication-row"><div class="publication-num">0${i+1}</div><div><p class="publication-type">${esc(p.type)} · ${esc(p.year)}</p><h3>${esc(p.title)}</h3><p class="publication-note">${esc(p.note)}</p>${safeUrl(p.link)?`<a class="publication-resource" href="${safeUrl(p.link)}" target="_blank" rel="noopener noreferrer">${esc(ui('publicationView','View document ↗'))}</a>`:''}</div><span class="status-pill">${esc(p.status)}</span></article>`).join('');
   $('experience-list').innerHTML=d.experience.map(x=>`<article class="experience-item"><div class="experience-year">${esc(x.year)}</div><h3>${esc(x.role)}</h3><strong>${esc(x.place)}</strong><p>${esc(x.description)}</p></article>`).join('');
   $('training-list').innerHTML=d.training.map(x=>`<article class="training-item"><span>${esc(x.year)} · ${esc(x.detail)}</span><h3>${esc(x.name)}</h3><p>${esc(x.source)}</p></article>`).join('');
   $('skills-grid').innerHTML=d.skills.map((x,i)=>`<div class="skill-group"><span>0${i+1} / ${esc(x.group)}</span><h3>${esc(x.group)}</h3><div class="skill-pills">${x.items.map(s=>`<span>${esc(s)}</span>`).join('')}</div></div>`).join('');
   $('recognition-grid').innerHTML=d.recognition.map((x,i)=>`<div class="recognition-card"><span class="recognition-num">0${i+1} <i>✳</i></span><h3>${esc(x.title)}</h3><p>${esc(x.detail)}</p><span class="recognition-year">${esc(x.year)}</span></div>`).join('');
-  const links=[{label:'Email',url:d.email?`mailto:${d.email}`:''},{label:'Academic portfolio (Google Sites)',url:d.previousPortfolio},{label:'LinkedIn',url:d.linkedIn},{label:'GitHub',url:d.github},{label:'Academic CV',url:d.cvUrl}].filter(x=>x.url);
+  const links=[{label:ui('linkEmail','Email'),url:d.email?`mailto:${d.email}`:''},{label:ui('linkOldPortfolio','Academic portfolio (Google Sites)'),url:d.previousPortfolio},{label:ui('linkLinkedIn','LinkedIn'),url:d.linkedIn},{label:ui('linkGithub','GitHub'),url:d.github},{label:ui('linkCV','Academic CV'),url:d.cvUrl}].filter(x=>x.url);
   $('contact-links').innerHTML=links.map(l=>`<a href="${safeUrl(l.url)}" ${/^https?:/i.test(l.url)?'target="_blank" rel="noopener noreferrer"':''}>${esc(l.label)} <span aria-hidden="true">↗</span></a>`).join('');
   $('email-link').href=d.email?`mailto:${d.email}`:d.previousPortfolio||'#contact';
-  if(!d.email) $('email-link').textContent='View my academic profile ↗';
+  if(!d.email) $('email-link').textContent=ui('emailFallback','View my academic profile ↗');
   const nav=$('site-nav'), menu=$('menu-toggle');
-  menu.addEventListener('click',()=>{const show=nav.classList.toggle('is-open'); menu.classList.toggle('is-open',show);menu.setAttribute('aria-expanded',String(show));menu.setAttribute('aria-label',show?'Close navigation':'Open navigation');});
+  menu.addEventListener('click',()=>{const show=nav.classList.toggle('is-open'); menu.classList.toggle('is-open',show);menu.setAttribute('aria-expanded',String(show));menu.setAttribute('aria-label',show?ui('navClose','Close navigation'):ui('navOpen','Open navigation'));});
   nav.addEventListener('click',e=>{if(e.target.closest('a')){nav.classList.remove('is-open');menu.classList.remove('is-open');menu.setAttribute('aria-expanded','false');}});
   function updateProgress(){const total=document.documentElement.scrollHeight-innerHeight; $('reading-progress').style.width=total>0?`${Math.min(100,(scrollY/total)*100)}%`:'0%';}
   window.addEventListener('scroll',updateProgress,{passive:true});updateProgress();

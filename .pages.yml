@@ -290,3 +290,576 @@ content:
   - name: year
     label: Year
     type: string
+
+# EDITABLE SITE COPY AND FONTS — only new sections, previous academic content unchanged.
+- name: site_home
+  label: 01 · HEADER, HOMEPAGE & MENU TEXT
+  type: file
+  path: data/site-home.json
+  format: json
+  fields:
+  - name: navHome
+    label: Navigation — Home
+    type: string
+  - name: navAbout
+    label: Navigation — About
+    type: string
+  - name: navResearch
+    label: Navigation — Research
+    type: string
+  - name: navPublications
+    label: Navigation — Publications
+    type: string
+  - name: navProjects
+    label: Navigation — Projects
+    type: string
+  - name: navExperience
+    label: Navigation — Experience
+    type: string
+  - name: navEducation
+    label: Navigation — Education
+    type: string
+  - name: navSkills
+    label: Navigation — Skills
+    type: string
+  - name: navAchievements
+    label: Navigation — Achievements
+    type: string
+  - name: navContact
+    label: Navigation — Contact
+    type: string
+  - name: heroMetaTop
+    label: Upper left academic label
+    type: string
+  - name: heroMetaBottom
+    label: Upper left institution label
+    type: string
+  - name: editorLink
+    label: Edit portfolio button label
+    type: string
+  - name: heroPortraitAlt
+    label: Portrait alternative description
+    type: string
+  - name: heroFirstButton
+    label: Explore research button
+    type: string
+  - name: heroSecondButton
+    label: Get in touch button
+    type: string
+  - name: ticker1
+    label: Moving topics — 1
+    type: string
+  - name: ticker2
+    label: Moving topics — 2
+    type: string
+  - name: ticker3
+    label: Moving topics — 3
+    type: string
+  - name: ticker4
+    label: Moving topics — 4
+    type: string
+  - name: ticker5
+    label: Moving topics — 5
+    type: string
+  - name: ticker6
+    label: Moving topics — 6
+    type: string
+- name: site_about
+  label: 02 · ABOUT HEADING
+  type: file
+  path: data/site-about.json
+  format: json
+  fields:
+  - name: number
+    label: Section number
+    type: string
+  - name: eyebrow
+    label: Small section label
+    type: string
+  - name: titleFirst
+    label: Heading — first line
+    type: string
+  - name: titleSecond
+    label: Heading — accented line
+    type: string
+- name: site_education
+  label: 03 · EDUCATION HEADING & LABELS
+  type: file
+  path: data/site-education.json
+  format: json
+  fields:
+  - name: number
+    label: Section number
+    type: string
+  - name: eyebrow
+    label: Small section label
+    type: string
+  - name: titleFirst
+    label: Heading — first line
+    type: string
+  - name: titleSecond
+    label: Heading — highlighted line
+    type: string
+  - name: degreeLabel
+    label: Degree label
+    type: string
+  - name: cgpaLabel
+    label: CGPA label
+    type: string
+  - name: recentLabel
+    label: Recent GPA label
+    type: string
+  - name: coursesLabel
+    label: Coursework label
+    type: string
+- name: site_research
+  label: 04 · RESEARCH HEADING & INTRO
+  type: file
+  path: data/site-research.json
+  format: json
+  fields:
+  - name: number
+    label: Section number
+    type: string
+  - name: eyebrow
+    label: Small section label
+    type: string
+  - name: titleFirst
+    label: Heading — first line
+    type: string
+  - name: titleSecond
+    label: Heading — second line
+    type: string
+  - name: titleAccent
+    label: Heading — accented word
+    type: string
+  - name: intro
+    label: Research introductory paragraph
+    type: text
+- name: site_projects
+  label: 05 · PROJECTS HEADING & INTRO
+  type: file
+  path: data/site-projects.json
+  format: json
+  fields:
+  - name: number
+    label: Section number
+    type: string
+  - name: eyebrow
+    label: Small section label
+    type: string
+  - name: titleFirst
+    label: Heading — first line
+    type: string
+  - name: titleSecond
+    label: Heading — accented line
+    type: string
+  - name: intro
+    label: Projects introductory paragraph
+    type: text
+  - name: sideNoteFirst
+    label: Side note — first line
+    type: string
+  - name: sideNoteSecond
+    label: Side note — second line
+    type: string
+- name: site_publications
+  label: 06 · PUBLICATIONS HEADING & DISCLAIMER
+  type: file
+  path: data/site-publications.json
+  format: json
+  fields:
+  - name: number
+    label: Section number
+    type: string
+  - name: eyebrow
+    label: Small section label
+    type: string
+  - name: titleFirst
+    label: Heading — first line
+    type: string
+  - name: titleSecond
+    label: Heading — accented line
+    type: string
+  - name: intro
+    label: Publications introductory paragraph
+    type: string
+  - name: disclosure
+    label: Publication status disclosure
+    type: text
+- name: site_experience
+  label: 07 · EXPERIENCE HEADING
+  type: file
+  path: data/site-experience.json
+  format: json
+  fields:
+  - name: number
+    label: Section number
+    type: string
+  - name: eyebrow
+    label: Small section label
+    type: string
+  - name: titleFirst
+    label: Heading — first line
+    type: string
+  - name: titleSecond
+    label: Heading — highlighted word
+    type: string
+  - name: leftTitle
+    label: Experience column label
+    type: string
+  - name: rightTitle
+    label: Training column label
+    type: string
+- name: site_skills
+  label: 08 · SKILLS HEADING
+  type: file
+  path: data/site-skills.json
+  format: json
+  fields:
+  - name: number
+    label: Section number
+    type: string
+  - name: eyebrow
+    label: Small section label
+    type: string
+  - name: titleFirst
+    label: Heading — first line
+    type: string
+  - name: titleSecond
+    label: Heading — accented line
+    type: string
+- name: site_achievements
+  label: 09 · ACHIEVEMENTS HEADING
+  type: file
+  path: data/site-achievements.json
+  format: json
+  fields:
+  - name: number
+    label: Section number
+    type: string
+  - name: eyebrow
+    label: Small section label
+    type: string
+  - name: titleFirst
+    label: Heading — first line
+    type: string
+  - name: titleSecond
+    label: Heading — accented line
+    type: string
+- name: site_contact
+  label: 10 · CONTACT HEADING & WORDING
+  type: file
+  path: data/site-contact.json
+  format: json
+  fields:
+  - name: eyebrow
+    label: Small label
+    type: string
+  - name: titleFirst
+    label: Contact headline — line one
+    type: string
+  - name: titleSecond
+    label: Contact headline — line two
+    type: string
+  - name: titleAccent
+    label: Contact headline — accented word
+    type: string
+  - name: intro
+    label: Contact paragraph
+    type: text
+  - name: emailButton
+    label: Email button label
+    type: string
+  - name: linksHeading
+    label: Links card label
+    type: string
+- name: site_footer
+  label: 11 · FOOTER WORDING
+  type: file
+  path: data/site-footer.json
+  format: json
+  fields:
+  - name: signature
+    label: Footer identity wording
+    type: string
+  - name: statement
+    label: Footer closing sentence
+    type: string
+  - name: backToTop
+    label: Footer back-to-top link
+    type: string
+- name: site_accessibility
+  label: 12 · ACCESSIBILITY LABELS
+  type: file
+  path: data/site-accessibility.json
+  format: json
+  fields:
+  - name: closeProjectLabel
+    label: Close project button screen-reader label
+    type: string
+  - name: navigationLabel
+    label: Main navigation screen-reader label
+    type: string
+  - name: heroLabel
+    label: Cover screen-reader label
+    type: string
+  - name: filterLabel
+    label: Project filter screen-reader label
+    type: string
+- name: site_interface
+  label: 13 · PROJECT BUTTONS, FILTERS & LINK LABELS
+  type: file
+  path: data/site-interface.json
+  format: json
+  fields:
+  - name: filterAll
+    label: Project filters — All work
+    type: string
+  - name: filterResearch
+    label: Project filters — Research
+    type: string
+  - name: filterThesis
+    label: Project filters — Thesis
+    type: string
+  - name: filterSimulation
+    label: Project filters — Simulation
+    type: string
+  - name: filterProject
+    label: Project filters — Project
+    type: string
+  - name: explore
+    label: Project card — Explore
+    type: string
+  - name: projectApproach
+    label: Project detail — Approach
+    type: string
+  - name: projectOutcome
+    label: Project detail — Outcome
+    type: string
+  - name: projectTools
+    label: Project detail — Tools and methods
+    type: string
+  - name: projectOpen
+    label: Project detail — Document button
+    type: string
+  - name: publicationView
+    label: Publication — Document button
+    type: string
+  - name: linkEmail
+    label: Contact link — Email
+    type: string
+  - name: linkOldPortfolio
+    label: Contact link — Old portfolio
+    type: string
+  - name: linkLinkedIn
+    label: Contact link — LinkedIn
+    type: string
+  - name: linkGithub
+    label: Contact link — GitHub
+    type: string
+  - name: linkCV
+    label: Contact link — Academic CV
+    type: string
+  - name: emailFallback
+    label: Contact button when email is absent
+    type: string
+  - name: navOpen
+    label: Mobile menu — open label
+    type: string
+  - name: navClose
+    label: Mobile menu — close label
+    type: string
+  - name: projectAria
+    label: Project card screen reader — Read about
+    type: string
+  - name: imageAria
+    label: Project image screen reader — Description prefix
+    type: string
+  - name: pageSuffix
+    label: Browser tab title suffix
+    type: string
+- name: site_metadata
+  label: 14 · BROWSER TAB & SEARCH DESCRIPTION
+  type: file
+  path: data/site-metadata.json
+  format: json
+  fields:
+  - name: browserTitle
+    label: Browser tab title
+    type: string
+  - name: description
+    label: Search result description
+    type: text
+  - name: socialTitle
+    label: Social sharing title
+    type: string
+  - name: socialDescription
+    label: Social sharing description
+    type: text
+- name: site_fonts
+  label: 15 · FONT EDITOR — choose any text element
+  type: file
+  path: data/site-fonts.json
+  format: json
+  fields:
+  - name: styles
+    label: Font overrides (add an item for any text element; no entries = original fonts)
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{target}'
+    fields:
+    - name: target
+      label: Text element to style
+      type: select
+      options:
+        values:
+        - body
+        - header
+        - brand
+        - nav
+        - heroName
+        - heroMeta
+        - heroSubtitle
+        - heroButtons
+        - headings
+        - aboutHeading
+        - educationHeading
+        - researchHeading
+        - projectsHeading
+        - publicationsHeading
+        - experienceHeading
+        - skillsHeading
+        - achievementsHeading
+        - contactHeading
+        - paragraphs
+        - researchItems
+        - projectTitles
+        - projectDescriptions
+        - projectButtons
+        - publicationTitles
+        - publicationDetails
+        - experienceDetails
+        - skillsDetails
+        - contactLinks
+        - footer
+        - home.navHome
+        - home.navAbout
+        - home.navResearch
+        - home.navPublications
+        - home.navProjects
+        - home.navExperience
+        - home.navEducation
+        - home.navSkills
+        - home.navAchievements
+        - home.navContact
+        - home.heroMetaTop
+        - home.heroMetaBottom
+        - home.editorLink
+        - home.heroPortraitAlt
+        - home.heroFirstButton
+        - home.heroSecondButton
+        - home.ticker1
+        - home.ticker2
+        - home.ticker3
+        - home.ticker4
+        - home.ticker5
+        - home.ticker6
+        - about.number
+        - about.eyebrow
+        - about.titleFirst
+        - about.titleSecond
+        - education.number
+        - education.eyebrow
+        - education.titleFirst
+        - education.titleSecond
+        - education.degreeLabel
+        - education.cgpaLabel
+        - education.recentLabel
+        - education.coursesLabel
+        - research.number
+        - research.eyebrow
+        - research.titleFirst
+        - research.titleSecond
+        - research.titleAccent
+        - research.intro
+        - projects.number
+        - projects.eyebrow
+        - projects.titleFirst
+        - projects.titleSecond
+        - projects.intro
+        - projects.sideNoteFirst
+        - projects.sideNoteSecond
+        - publications.number
+        - publications.eyebrow
+        - publications.titleFirst
+        - publications.titleSecond
+        - publications.intro
+        - publications.disclosure
+        - experience.number
+        - experience.eyebrow
+        - experience.titleFirst
+        - experience.titleSecond
+        - experience.leftTitle
+        - experience.rightTitle
+        - skills.number
+        - skills.eyebrow
+        - skills.titleFirst
+        - skills.titleSecond
+        - achievements.number
+        - achievements.eyebrow
+        - achievements.titleFirst
+        - achievements.titleSecond
+        - contact.eyebrow
+        - contact.titleFirst
+        - contact.titleSecond
+        - contact.titleAccent
+        - contact.intro
+        - contact.emailButton
+        - contact.linksHeading
+        - footer.signature
+        - footer.statement
+        - footer.backToTop
+    - name: fontFamily
+      label: Font family (leave as Default to preserve original)
+      type: select
+      options:
+        values:
+        - Default
+        - Georgia
+        - Times New Roman
+        - Arial
+        - Inter
+        - Verdana
+        - Tahoma
+        - Trebuchet MS
+        - Palatino Linotype
+        - Garamond
+        - Cambria
+        - Helvetica
+    - name: fontSize
+      label: 'Font size (optional: e.g. 18px, 1.2rem)'
+      type: string
+    - name: fontWeight
+      label: Font weight
+      type: select
+      options:
+        values:
+        - Default
+        - Normal
+        - Bold
+        - Light
+        - Medium
+        - Semi-bold
+        - Extra-bold
+    - name: lineHeight
+      label: 'Line height (optional: e.g. 1.4)'
+      type: string
+    - name: letterSpacing
+      label: 'Letter spacing (optional: e.g. 0.02em)'
+      type: string
+    - name: color
+      label: 'Text color (optional: e.g. #06392f)'
+      type: string

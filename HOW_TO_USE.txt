@@ -1,0 +1,37 @@
+# EDIT YOUR EXISTING PORTFOLIO WITHOUT LOSING YOUR PREVIOUS CHANGES
+
+This update was prepared from the actual `dilshad_portfolio-main.zip` you uploaded, not from any older template.
+
+## IMPORTANT — What will NOT change
+- Every file inside your existing `assets/` folder, including all photos and PDFs
+- Every existing academic content file such as `data/profile.json`, `data/projects.json`, `data/interests.json`, etc.
+- Your current `index.html` layout, HTML words, and all existing CSS (`styles.css` and `clean-theme.css`)
+- Your existing `content.js` fallback and the other original site files
+- Your GitHub Pages website address or existing Pages CMS setup
+
+### Only three existing files are updated
+- `.pages.yml` — adds new editor categories to your existing categories
+- `cms-loader.js` — reads the new text/font settings before drawing the page
+- `script.js` — allows the existing fixed labels in project cards, filters, pop-ups and links to be customized
+
+The rest of the update is NEW files: `site-editability.js`, `site-edit-map.json`, and 15 NEW `data/site-*.json` files. These are copied from your current displayed wording, not my preferred wording. Font overrides are EMPTY by default.
+
+## Apply this update once
+1. KEEP the downloaded ZIP as your backup. Do not delete the current GitHub repository.
+2. Unzip `Dilshad_Editing_Only_Safe_Update.zip` on your computer.
+3. Open your existing GitHub repository and use `Add file → Upload files`.
+4. Drag the files and the **data** folder from the extracted update into the upload area (do NOT upload the ZIP itself). Confirm you see the paths `data/site-home.json`, `data/site-contact.json`, and `data/site-fonts.json`. The existing data JSON files are not included in this update.
+5. Commit changes to `main` and refresh Pages CMS.
+6. Open editor categories numbered 01–15 to edit the new wording and fonts. Your original Profile, Research, Projects and other academic CMS categories remain available.
+
+## What you can edit
+- **Your previous profile and project edits:** Use the ORIGINAL Pages CMS categories, as before.
+- **Homepage, menu, section titles, small descriptions, contact and footer:** Use NEW categories 01–14.
+- **Font controls:** Use NEW category `15 · FONT EDITOR` → `Add item` → select a text element → choose font family, weight, or size → Save.
+- Font sizes accept simple values like `18px` or `1.3rem`. Leave unused options blank. No entries means fonts stay EXACTLY as they are now.
+
+## Important limitation
+Pages CMS is a form-based content editor, NOT a Google Sites-style visual page designer. All ordinary text blocks and many individual typographic targets are configurable, but changes to the layout/position of elements or applying a different font to **one word in the middle of a paragraph** would require a visual rich-text editor or code. This patch does NOT change the layout or add such an editor.
+
+## Safety / recovery
+You can restore the previously uploaded ZIP if needed. GitHub also retains commit history, making changes reversible. Please review the live site after deployment before making large batches of edits.

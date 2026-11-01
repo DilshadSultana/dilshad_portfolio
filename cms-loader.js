@@ -23,7 +23,26 @@
     tools:Array.isArray(p.tools)?p.tools:[]
   }));
   window.PORTFOLIO_DATA=data;
+  // Additional presentation copy is independent from your existing academic data.
+  // Missing editor files never prevent existing profile/research data from loading.
+  const textSections=['home','about','education','research','projects','publications','experience','skills','achievements','contact','footer','accessibility','interface','metadata'];
+  window.PORTFOLIO_EDIT_TEXT={};
+  window.PORTFOLIO_EDIT_FONTS={styles:[]};
+  if(location.protocol!=='file:') {
+    await Promise.all(textSections.map(async key=>{
+      try {
+        const response=await fetch(`data/site-${key}.json`,{cache:'no-cache'});
+        if(response.ok) window.PORTFOLIO_EDIT_TEXT[key]=await response.json();
+      }catch(error){ console.warn('Optional wording file unavailable:',key,error); }
+    }));
+    try {
+      const fonts=await fetch('data/site-fonts.json',{cache:'no-cache'});
+      if(fonts.ok) window.PORTFOLIO_EDIT_FONTS=await fonts.json();
+    }catch(error){console.warn('Optional font settings unavailable',error);}
+  }
   const script=document.createElement('script');script.src='script.js';
+  // The editor runs after the original site renderer so text is never overwritten.
+  script.onload=()=>{ const extra=document.createElement('script');extra.src='site-editability.js';document.body.append(extra); };
   script.onerror=()=>{document.body.insertAdjacentText('afterbegin','Could not load the portfolio script.');};
   document.body.append(script);
 })();

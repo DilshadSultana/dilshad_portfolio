@@ -1,0 +1,541 @@
+{
+  "textMappings": {
+    "home": [
+      {
+        "key": "navHome",
+        "selector": ".site-nav a[href=\"#top\"]",
+        "mode": "whole"
+      },
+      {
+        "key": "navAbout",
+        "selector": ".site-nav a[href=\"#about\"]",
+        "mode": "whole"
+      },
+      {
+        "key": "navResearch",
+        "selector": ".site-nav a[href=\"#research\"]",
+        "mode": "whole"
+      },
+      {
+        "key": "navPublications",
+        "selector": ".site-nav a[href=\"#publications\"]",
+        "mode": "whole"
+      },
+      {
+        "key": "navProjects",
+        "selector": ".site-nav a[href=\"#projects\"]",
+        "mode": "whole"
+      },
+      {
+        "key": "navExperience",
+        "selector": ".site-nav a[href=\"#experience\"]",
+        "mode": "whole"
+      },
+      {
+        "key": "navEducation",
+        "selector": ".site-nav a[href=\"#education\"]",
+        "mode": "whole"
+      },
+      {
+        "key": "navSkills",
+        "selector": ".site-nav a[href=\"#skills\"]",
+        "mode": "whole"
+      },
+      {
+        "key": "navAchievements",
+        "selector": ".site-nav a[href=\"#recognition\"]",
+        "mode": "whole"
+      },
+      {
+        "key": "navContact",
+        "selector": ".site-nav a[href=\"#contact\"]",
+        "mode": "whole"
+      },
+      {
+        "key": "heroMetaTop",
+        "selector": ".hero-meta > p",
+        "mode": "direct0"
+      },
+      {
+        "key": "heroMetaBottom",
+        "selector": ".hero-meta > p span",
+        "mode": "whole"
+      },
+      {
+        "key": "editorLink",
+        "selector": ".edit-portfolio-link",
+        "mode": "direct0"
+      },
+      {
+        "key": "heroPortraitAlt",
+        "selector": "#hero-portrait",
+        "mode": "attr:alt"
+      },
+      {
+        "key": "heroFirstButton",
+        "selector": ".hero-actions .button",
+        "mode": "direct0"
+      },
+      {
+        "key": "heroSecondButton",
+        "selector": ".hero-actions .plain-link",
+        "mode": "direct0"
+      },
+      {
+        "key": "ticker1",
+        "selector": ".ticker-track > span:nth-of-type(1)",
+        "mode": "whole"
+      },
+      {
+        "key": "ticker2",
+        "selector": ".ticker-track > span:nth-of-type(2)",
+        "mode": "whole"
+      },
+      {
+        "key": "ticker3",
+        "selector": ".ticker-track > span:nth-of-type(3)",
+        "mode": "whole"
+      },
+      {
+        "key": "ticker4",
+        "selector": ".ticker-track > span:nth-of-type(4)",
+        "mode": "whole"
+      },
+      {
+        "key": "ticker5",
+        "selector": ".ticker-track > span:nth-of-type(5)",
+        "mode": "whole"
+      },
+      {
+        "key": "ticker6",
+        "selector": ".ticker-track > span:nth-of-type(6)",
+        "mode": "whole"
+      }
+    ],
+    "about": [
+      {
+        "key": "number",
+        "selector": "#about .section-index",
+        "mode": "whole"
+      },
+      {
+        "key": "eyebrow",
+        "selector": "#about .section-eyebrow",
+        "mode": "whole"
+      },
+      {
+        "key": "titleFirst",
+        "selector": "#about-heading",
+        "mode": "direct0"
+      },
+      {
+        "key": "titleSecond",
+        "selector": "#about-heading .accent-italic",
+        "mode": "whole"
+      }
+    ],
+    "education": [
+      {
+        "key": "number",
+        "selector": "#education .section-index",
+        "mode": "whole"
+      },
+      {
+        "key": "eyebrow",
+        "selector": "#education .section-eyebrow",
+        "mode": "whole"
+      },
+      {
+        "key": "titleFirst",
+        "selector": "#education-heading",
+        "mode": "direct0"
+      },
+      {
+        "key": "titleSecond",
+        "selector": "#education-heading .lime-text",
+        "mode": "whole"
+      },
+      {
+        "key": "degreeLabel",
+        "selector": "#education .education-main .tiny-label",
+        "mode": "direct0"
+      },
+      {
+        "key": "cgpaLabel",
+        "selector": "#education .grade-row > div:nth-child(1) > span",
+        "mode": "whole"
+      },
+      {
+        "key": "recentLabel",
+        "selector": "#education .grade-row > div:nth-child(2) > span",
+        "mode": "whole"
+      },
+      {
+        "key": "coursesLabel",
+        "selector": "#education .course-panel .tiny-label",
+        "mode": "whole"
+      }
+    ],
+    "research": [
+      {
+        "key": "number",
+        "selector": "#research .section-index",
+        "mode": "whole"
+      },
+      {
+        "key": "eyebrow",
+        "selector": "#research .section-eyebrow",
+        "mode": "whole"
+      },
+      {
+        "key": "titleFirst",
+        "selector": "#research-heading",
+        "mode": "direct0"
+      },
+      {
+        "key": "titleSecond",
+        "selector": "#research-heading",
+        "mode": "direct1"
+      },
+      {
+        "key": "titleAccent",
+        "selector": "#research-heading .accent-italic",
+        "mode": "whole"
+      },
+      {
+        "key": "intro",
+        "selector": "#research .heading-support",
+        "mode": "whole"
+      }
+    ],
+    "projects": [
+      {
+        "key": "number",
+        "selector": "#projects .section-index",
+        "mode": "whole"
+      },
+      {
+        "key": "eyebrow",
+        "selector": "#projects .section-eyebrow",
+        "mode": "whole"
+      },
+      {
+        "key": "titleFirst",
+        "selector": "#projects-heading",
+        "mode": "direct0"
+      },
+      {
+        "key": "titleSecond",
+        "selector": "#projects-heading .accent-italic",
+        "mode": "whole"
+      },
+      {
+        "key": "intro",
+        "selector": "#projects .heading-support",
+        "mode": "whole"
+      },
+      {
+        "key": "sideNoteFirst",
+        "selector": "#projects .small-side-note",
+        "mode": "direct0"
+      },
+      {
+        "key": "sideNoteSecond",
+        "selector": "#projects .small-side-note",
+        "mode": "direct1"
+      }
+    ],
+    "publications": [
+      {
+        "key": "number",
+        "selector": "#publications .section-index",
+        "mode": "whole"
+      },
+      {
+        "key": "eyebrow",
+        "selector": "#publications .section-eyebrow",
+        "mode": "whole"
+      },
+      {
+        "key": "titleFirst",
+        "selector": "#publications-heading",
+        "mode": "direct0"
+      },
+      {
+        "key": "titleSecond",
+        "selector": "#publications-heading .accent-italic",
+        "mode": "whole"
+      },
+      {
+        "key": "intro",
+        "selector": "#publications .heading-support",
+        "mode": "whole"
+      },
+      {
+        "key": "disclosure",
+        "selector": "#publications .disclosure-note",
+        "mode": "whole"
+      }
+    ],
+    "experience": [
+      {
+        "key": "number",
+        "selector": "#experience .section-index",
+        "mode": "whole"
+      },
+      {
+        "key": "eyebrow",
+        "selector": "#experience .section-eyebrow",
+        "mode": "whole"
+      },
+      {
+        "key": "titleFirst",
+        "selector": "#experience-heading",
+        "mode": "direct0"
+      },
+      {
+        "key": "titleSecond",
+        "selector": "#experience-heading .lime-text",
+        "mode": "whole"
+      },
+      {
+        "key": "leftTitle",
+        "selector": "#experience .column-label:nth-of-type(1)",
+        "mode": "whole"
+      },
+      {
+        "key": "rightTitle",
+        "selector": "#experience .experience-layout > div:nth-child(2) .column-label",
+        "mode": "whole"
+      }
+    ],
+    "skills": [
+      {
+        "key": "number",
+        "selector": "#skills .section-index",
+        "mode": "whole"
+      },
+      {
+        "key": "eyebrow",
+        "selector": "#skills .section-eyebrow",
+        "mode": "whole"
+      },
+      {
+        "key": "titleFirst",
+        "selector": "#skills-heading",
+        "mode": "direct0"
+      },
+      {
+        "key": "titleSecond",
+        "selector": "#skills-heading .accent-italic",
+        "mode": "whole"
+      }
+    ],
+    "achievements": [
+      {
+        "key": "number",
+        "selector": "#recognition .section-index",
+        "mode": "whole"
+      },
+      {
+        "key": "eyebrow",
+        "selector": "#recognition .section-eyebrow",
+        "mode": "whole"
+      },
+      {
+        "key": "titleFirst",
+        "selector": "#recognition-heading",
+        "mode": "direct0"
+      },
+      {
+        "key": "titleSecond",
+        "selector": "#recognition-heading .accent-italic",
+        "mode": "whole"
+      }
+    ],
+    "contact": [
+      {
+        "key": "eyebrow",
+        "selector": "#contact .contact-kicker",
+        "mode": "direct0"
+      },
+      {
+        "key": "titleFirst",
+        "selector": "#contact-heading",
+        "mode": "direct0"
+      },
+      {
+        "key": "titleSecond",
+        "selector": "#contact-heading",
+        "mode": "direct1"
+      },
+      {
+        "key": "titleAccent",
+        "selector": "#contact-heading .lime-text",
+        "mode": "whole"
+      },
+      {
+        "key": "intro",
+        "selector": "#contact .contact-copy",
+        "mode": "whole"
+      },
+      {
+        "key": "emailButton",
+        "selector": "#email-link",
+        "mode": "direct0"
+      },
+      {
+        "key": "linksHeading",
+        "selector": "#contact .contact-card .tiny-label",
+        "mode": "whole"
+      }
+    ],
+    "footer": [
+      {
+        "key": "signature",
+        "selector": ".site-footer .footer-name span",
+        "mode": "whole"
+      },
+      {
+        "key": "statement",
+        "selector": ".site-footer > span",
+        "mode": "whole"
+      },
+      {
+        "key": "backToTop",
+        "selector": ".site-footer > a:last-child",
+        "mode": "whole"
+      }
+    ],
+    "accessibility": [
+      {
+        "key": "closeProjectLabel",
+        "selector": "#dialog-close",
+        "mode": "attr:aria-label"
+      },
+      {
+        "key": "navigationLabel",
+        "selector": "#site-nav",
+        "mode": "attr:aria-label"
+      },
+      {
+        "key": "heroLabel",
+        "selector": ".hero-stage",
+        "mode": "attr:aria-label"
+      },
+      {
+        "key": "filterLabel",
+        "selector": "#project-filters",
+        "mode": "attr:aria-label"
+      }
+    ]
+  },
+  "fontSelectors": {
+    "body": "body",
+    "header": ".site-header",
+    "brand": ".wordmark",
+    "nav": ".site-nav a",
+    "heroName": ".hero-content h1, .hero-content h1 em",
+    "heroMeta": ".hero-meta",
+    "heroSubtitle": ".hero-role, .hero-intro",
+    "heroButtons": ".hero-actions a",
+    "headings": ".section-heading h2, .section-heading h2 span",
+    "aboutHeading": "#about-heading, #about-heading span",
+    "educationHeading": "#education-heading, #education-heading span",
+    "researchHeading": "#research-heading, #research-heading span",
+    "projectsHeading": "#projects-heading, #projects-heading span",
+    "publicationsHeading": "#publications-heading, #publications-heading span",
+    "experienceHeading": "#experience-heading, #experience-heading span",
+    "skillsHeading": "#skills-heading, #skills-heading span",
+    "achievementsHeading": "#recognition-heading, #recognition-heading span",
+    "contactHeading": "#contact-heading, #contact-heading span",
+    "paragraphs": ".heading-support, .about-body p, .contact-copy, .disclosure-note",
+    "researchItems": ".interest-row h3, .interest-row p",
+    "projectTitles": ".project-card h3, #dialog-content h2",
+    "projectDescriptions": ".project-card p, #dialog-content p",
+    "projectButtons": ".filter-button, .view-detail",
+    "publicationTitles": ".publication-row h3",
+    "publicationDetails": ".publication-row p, .publication-row .status-pill",
+    "experienceDetails": ".experience-item, .training-item",
+    "skillsDetails": ".skill-group, .skill-pills",
+    "contactLinks": ".contact-email, .contact-link-list a",
+    "footer": ".site-footer",
+    "home.navHome": ".site-nav a[href=\"#top\"]",
+    "home.navAbout": ".site-nav a[href=\"#about\"]",
+    "home.navResearch": ".site-nav a[href=\"#research\"]",
+    "home.navPublications": ".site-nav a[href=\"#publications\"]",
+    "home.navProjects": ".site-nav a[href=\"#projects\"]",
+    "home.navExperience": ".site-nav a[href=\"#experience\"]",
+    "home.navEducation": ".site-nav a[href=\"#education\"]",
+    "home.navSkills": ".site-nav a[href=\"#skills\"]",
+    "home.navAchievements": ".site-nav a[href=\"#recognition\"]",
+    "home.navContact": ".site-nav a[href=\"#contact\"]",
+    "home.heroMetaTop": ".hero-meta > p",
+    "home.heroMetaBottom": ".hero-meta > p span",
+    "home.editorLink": ".edit-portfolio-link",
+    "home.heroPortraitAlt": "#hero-portrait",
+    "home.heroFirstButton": ".hero-actions .button",
+    "home.heroSecondButton": ".hero-actions .plain-link",
+    "home.ticker1": ".ticker-track > span:nth-of-type(1)",
+    "home.ticker2": ".ticker-track > span:nth-of-type(2)",
+    "home.ticker3": ".ticker-track > span:nth-of-type(3)",
+    "home.ticker4": ".ticker-track > span:nth-of-type(4)",
+    "home.ticker5": ".ticker-track > span:nth-of-type(5)",
+    "home.ticker6": ".ticker-track > span:nth-of-type(6)",
+    "about.number": "#about .section-index",
+    "about.eyebrow": "#about .section-eyebrow",
+    "about.titleFirst": "#about-heading",
+    "about.titleSecond": "#about-heading .accent-italic",
+    "education.number": "#education .section-index",
+    "education.eyebrow": "#education .section-eyebrow",
+    "education.titleFirst": "#education-heading",
+    "education.titleSecond": "#education-heading .lime-text",
+    "education.degreeLabel": "#education .education-main .tiny-label",
+    "education.cgpaLabel": "#education .grade-row > div:nth-child(1) > span",
+    "education.recentLabel": "#education .grade-row > div:nth-child(2) > span",
+    "education.coursesLabel": "#education .course-panel .tiny-label",
+    "research.number": "#research .section-index",
+    "research.eyebrow": "#research .section-eyebrow",
+    "research.titleFirst": "#research-heading",
+    "research.titleSecond": "#research-heading",
+    "research.titleAccent": "#research-heading .accent-italic",
+    "research.intro": "#research .heading-support",
+    "projects.number": "#projects .section-index",
+    "projects.eyebrow": "#projects .section-eyebrow",
+    "projects.titleFirst": "#projects-heading",
+    "projects.titleSecond": "#projects-heading .accent-italic",
+    "projects.intro": "#projects .heading-support",
+    "projects.sideNoteFirst": "#projects .small-side-note",
+    "projects.sideNoteSecond": "#projects .small-side-note",
+    "publications.number": "#publications .section-index",
+    "publications.eyebrow": "#publications .section-eyebrow",
+    "publications.titleFirst": "#publications-heading",
+    "publications.titleSecond": "#publications-heading .accent-italic",
+    "publications.intro": "#publications .heading-support",
+    "publications.disclosure": "#publications .disclosure-note",
+    "experience.number": "#experience .section-index",
+    "experience.eyebrow": "#experience .section-eyebrow",
+    "experience.titleFirst": "#experience-heading",
+    "experience.titleSecond": "#experience-heading .lime-text",
+    "experience.leftTitle": "#experience .column-label:nth-of-type(1)",
+    "experience.rightTitle": "#experience .experience-layout > div:nth-child(2) .column-label",
+    "skills.number": "#skills .section-index",
+    "skills.eyebrow": "#skills .section-eyebrow",
+    "skills.titleFirst": "#skills-heading",
+    "skills.titleSecond": "#skills-heading .accent-italic",
+    "achievements.number": "#recognition .section-index",
+    "achievements.eyebrow": "#recognition .section-eyebrow",
+    "achievements.titleFirst": "#recognition-heading",
+    "achievements.titleSecond": "#recognition-heading .accent-italic",
+    "contact.eyebrow": "#contact .contact-kicker",
+    "contact.titleFirst": "#contact-heading",
+    "contact.titleSecond": "#contact-heading",
+    "contact.titleAccent": "#contact-heading .lime-text",
+    "contact.intro": "#contact .contact-copy",
+    "contact.emailButton": "#email-link",
+    "contact.linksHeading": "#contact .contact-card .tiny-label",
+    "footer.signature": ".site-footer .footer-name span",
+    "footer.statement": ".site-footer > span",
+    "footer.backToTop": ".site-footer > a:last-child"
+  }
+}
