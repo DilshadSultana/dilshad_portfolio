@@ -60,11 +60,15 @@ content:
   - name: github
     label: Github
     type: string
-  - name: cvUrl
-    label: Cv url
-    type: file
-    options:
-      media: docs
+  - - name: googleScholar
+  label: Google Scholar URL
+  type: string
+- name: orcid
+  label: ORCID URL
+  type: string
+- name: cvUrl
+  label: Google Drive CV URL
+  type: string
   - name: previousPortfolio
     label: Previous portfolio
     type: string

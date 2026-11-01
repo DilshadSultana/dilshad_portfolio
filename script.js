@@ -63,9 +63,19 @@
   $('training-list').innerHTML=d.training.map(x=>`<article class="training-item"><span>${esc(x.year)} · ${esc(x.detail)}</span><h3>${esc(x.name)}</h3><p>${esc(x.source)}</p></article>`).join('');
   $('skills-grid').innerHTML=d.skills.map((x,i)=>`<div class="skill-group"><span>0${i+1} / ${esc(x.group)}</span><h3>${esc(x.group)}</h3><div class="skill-pills">${x.items.map(s=>`<span>${esc(s)}</span>`).join('')}</div></div>`).join('');
   $('recognition-grid').innerHTML=d.recognition.map((x,i)=>`<div class="recognition-card"><span class="recognition-num">0${i+1} <i>✳</i></span><h3>${esc(x.title)}</h3><p>${esc(x.detail)}</p><span class="recognition-year">${esc(x.year)}</span></div>`).join('');
-  const links=[{label:ui('linkEmail','Email'),url:d.email?`mailto:${d.email}`:''},{label:ui('linkOldPortfolio','Academic portfolio (Google Sites)'),url:d.previousPortfolio},{label:ui('linkLinkedIn','LinkedIn'),url:d.linkedIn},{label:ui('linkGithub','GitHub'),url:d.github},{label:ui('linkCV','Academic CV'),url:d.cvUrl}].filter(x=>x.url);
+
+const links = [
+  { label: ui('linkEmail', 'Email'), url: d.email ? `mailto:${d.email}` : '' },
+  { label: ui('linkOldPortfolio', 'Academic portfolio (Google Sites)'), url: d.previousPortfolio },
+  { label: ui('linkLinkedIn', 'LinkedIn'), url: d.linkedIn },
+  { label: ui('linkGithub', 'GitHub'), url: d.github },
+  { label: 'Google Scholar', url: d.googleScholar },
+  { label: 'ORCID', url: d.orcid },
+  { label: ui('linkCV', 'Academic CV'), url: d.cvUrl },
+  ...(Array.isArray(d.extraLinks) ? d.extraLinks : [])
+].filter(x => x && x.label && safeUrl(x.url));
   $('contact-links').innerHTML=links.map(l=>`<a href="${safeUrl(l.url)}" ${/^https?:/i.test(l.url)?'target="_blank" rel="noopener noreferrer"':''}>${esc(l.label)} <span aria-hidden="true">↗</span></a>`).join('');
-  $('email-link').href=d.email?`mailto:${d.email}`:d.previousPortfolio||'#contact';
+  $('email-link').href=d.email?`mailto:${d.email}`:d.previousPortfolio|| '#contact';
   if(!d.email) $('email-link').textContent=ui('emailFallback','View my academic profile ↗');
   const nav=$('site-nav'), menu=$('menu-toggle');
   menu.addEventListener('click',()=>{const show=nav.classList.toggle('is-open'); menu.classList.toggle('is-open',show);menu.setAttribute('aria-expanded',String(show));menu.setAttribute('aria-label',show?ui('navClose','Close navigation'):ui('navOpen','Open navigation'));});
