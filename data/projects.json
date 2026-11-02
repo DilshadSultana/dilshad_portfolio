@@ -47,6 +47,7 @@
     "year": "2025",
     "featured": true,
     "approach": "Developed comparative DesignBuilder/EnergyPlus cases and examined cooling electricity, solar gains and glazing thermal characteristics.",
+    "metric": "Design Builder",
     "metricLabel": "Course Work - ESE 4130",
     "tools": [
       "DesignBuilder",
@@ -108,7 +109,7 @@
     "summary": "Modelled a fire-alert circuit with heat and smoke detection and an LCD display.",
     "approach": "Designed and simulated the sensor-integrated circuit in Tinkercad.",
     "outcome": "Combined sensor interfacing, basic logic and visual alert output.",
-    "metric": "Sensors",
+    "metric": "Tinkercad",
     "metricLabel": "Course Work- ESE 4126",
     "tools": [
       "Tinkercad",
