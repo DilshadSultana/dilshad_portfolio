@@ -1,23 +1,5 @@
 [
   {
-    "title": "Thermal Performance Assessment of Aerogel-Integrated Glazing System  for Reduced Solar Heat Gain in Building ",
-    "kind": "Simulation",
-    "topic": "Building energy",
-    "year": "2025",
-    "featured": true,
-    "approach": "Developed comparative DesignBuilder/EnergyPlus cases and examined cooling electricity, solar gains and glazing thermal characteristics.",
-    "metricLabel": "modelled cooling electricity reduction",
-    "tools": [
-      "DesignBuilder",
-      "EnergyPlus",
-      "Building energy modelling",
-      "Python"
-    ],
-    "visual": "glazing",
-    "image": "assets/uploads/Screenshot 2026-11-01 001246.png",
-    "link": "https://drive.google.com/file/d/1HZkLVJSejqUNIUc67azmPmiNz2j3vScn/view?usp=drive_link"
-  },
-  {
     "title": "Biodiesel from blended jojoba and sesbania oils",
     "kind": "Thesis",
     "topic": "Experimental research",
@@ -57,6 +39,24 @@
     "visual": "solar",
     "image": "assets/uploads/WhatsApp Image 2026-11-01 at 00.44.10.jpeg",
     "link": "https://drive.google.com/file/d/1CnayAWij0qFlt9JujGj-s9NX2_Z9PZTO/view?usp=drive_link"
+  },
+  {
+    "title": "Thermal Performance Assessment of Aerogel-Integrated Glazing System  for Reduced Solar Heat Gain in Building ",
+    "kind": "Simulation",
+    "topic": "Building energy",
+    "year": "2025",
+    "featured": true,
+    "approach": "Developed comparative DesignBuilder/EnergyPlus cases and examined cooling electricity, solar gains and glazing thermal characteristics.",
+    "metricLabel": "modelled cooling electricity reduction",
+    "tools": [
+      "DesignBuilder",
+      "EnergyPlus",
+      "Building energy modelling",
+      "Python"
+    ],
+    "visual": "glazing",
+    "image": "assets/uploads/Screenshot 2026-11-01 001246.png",
+    "link": "https://drive.google.com/file/d/1HZkLVJSejqUNIUc67azmPmiNz2j3vScn/view?usp=drive_link"
   },
   {
     "title": "Recuperative Organic Rankine Cycle analysis",
