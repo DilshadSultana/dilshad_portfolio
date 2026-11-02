@@ -7,8 +7,8 @@
   "courses": [
     "Electrical Machines",
     "Electrical Circuits and Electronics ",
-    "Power System Engineering",
     "Power Electronics",
+    "Power System Engineering",
     "Instrumentation and Control",
     "Energy Storage Systems",
     "Solar Thermal Engineering",
@@ -22,7 +22,6 @@
     "Fuels and Engine Combustion",
     "Petroleum and Natural Gas Processing",
     "Thermodynamics  ",
-    "Thermodynamics & Heat Transfer",
     "Heat and Mass Transfer",
     "HVAC&R System Design",
     "Energy Audit & Management",
