@@ -140,7 +140,20 @@
     "link": "https://drive.google.com/file/d/1YKPukSTxG_kav0MNCwfrORmRPawz22_E/view?usp=drive_link"
   },
   {
+    "title": "PLC- Ladder Diagram Logic using LOGO Software",
+    "kind": "Simulation",
+    "topic": " PLC Programming, Automation",
+    "year": "2024",
     "featured": true,
+    "summary": "Developed and analyzed PLC-based control logic using ladder diagrams to implement basic industrial automation and sequential control operations. The project involved translating control requirements into ladder logic using input contacts, output coils, series and parallel logic, and fundamental control instructions.",
+    "outcome": "Successfully developed ladder-logic-based control sequences and gained practical understanding of PLC programming, digital control logic, input–output interfacing, and the implementation of automated control systems.",
+    "metric": "PLC ",
+    "tools": [
+      "PLC Programming",
+      "Ladder Logic",
+      "Industrial Automation",
+      "Control System Design"
+    ],
     "visual": "circuit",
     "image": "assets/uploads/Screenshot 2026-09-08 122718.png",
     "link": "https://drive.google.com/file/d/1cHbsLV0hk68Q4SbtC0jrAEmrdI6VyBrv/view?usp=drive_link"
