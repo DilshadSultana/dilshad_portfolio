@@ -29,7 +29,7 @@
     "summary": "Designed and constructed a portable charging prototype using a small photovoltaic panel and rechargeable battery storage.",
     "approach": "Integrated a 0.75 W solar panel with a 7000 mAh storage unit for a compact energy application.",
     "outcome": "Demonstrated a hands-on application of solar harvesting and battery-based portable power.",
-    "metric": "0.75 W",
+    "metric": "B.Sc.",
     "metricLabel": "Undergraduate project - January, 2025",
     "tools": [
       "Solar photovoltaics",
@@ -47,7 +47,7 @@
     "year": "2025",
     "featured": true,
     "approach": "Developed comparative DesignBuilder/EnergyPlus cases and examined cooling electricity, solar gains and glazing thermal characteristics.",
-    "metricLabel": "Modelled cooling electricity reduction",
+    "metricLabel": "Course Work - ESE 4130",
     "tools": [
       "DesignBuilder",
       "EnergyPlus",
@@ -68,7 +68,7 @@
     "approach": "Modelled and cross-checked thermodynamic performance using Engineering Equation Solver and Python.",
     "outcome": "Examined system performance through energy and exergy calculations.",
     "metric": "EES + Python",
-    "metricLabel": "Course Work",
+    "metricLabel": "Course Work- ESE 4116",
     "tools": [
       "EES",
       "Python",
@@ -89,7 +89,7 @@
     "approach": "Used PCTRAN to examine modelled plant behaviour under specified transient conditions.",
     "outcome": "Practised simulation-based evaluation of complex power-plant responses.",
     "metric": "PCTRAN",
-    "metricLabel": "Course Work",
+    "metricLabel": "Course Work- ESE4214",
     "tools": [
       "PCTRAN",
       "Transient analysis",
@@ -109,7 +109,7 @@
     "approach": "Designed and simulated the sensor-integrated circuit in Tinkercad.",
     "outcome": "Combined sensor interfacing, basic logic and visual alert output.",
     "metric": "Sensors",
-    "metricLabel": "Course Work",
+    "metricLabel": "Course Work- ESE 4126",
     "tools": [
       "Tinkercad",
       "Arduino",
@@ -129,7 +129,7 @@
     "approach": "Used block-based simulation to explore photovoltaic system characteristics.",
     "outcome": "Developed foundational modelling experience in solar energy applications.",
     "metric": "Simulink",
-    "metricLabel": "Course Work",
+    "metricLabel": "Course Work- ESE 3108",
     "tools": [
       "MATLAB",
       "Simulink",
@@ -148,7 +148,7 @@
     "summary": "Developed and analyzed PLC-based control logic using ladder diagrams to implement basic industrial automation and sequential control operations. The project involved translating control requirements into ladder logic using input contacts, output coils, series and parallel logic, and fundamental control instructions.",
     "outcome": "Successfully developed ladder-logic-based control sequences and gained practical understanding of PLC programming, digital control logic, input–output interfacing, and the implementation of automated control systems.",
     "metric": "PLC ",
-    "metricLabel": "Course Work",
+    "metricLabel": "Course Work- ESE 3218",
     "tools": [
       "PLC Programming",
       "Ladder Logic",
