@@ -1,9 +1,9 @@
 {
   "name": "Dilshad Sultana",
   "heroImage": "assets/dilshad-portrait.webp",
-  "heroRoleLabel": " Energy Science and Engineering · KUET · Bangladesh",
+  "heroRoleLabel": "Graduate of Energy Science and Engineering · KUET · Bangladesh",
   "initials": "DS",
-  "role": "Energy Science & Engineering Graduate",
+  "role": "Energy Science & Engineering ",
   "eyebrow": "Energy Science & Engineering",
   "headline": "Researching better energy futures.",
   "location": "Bangladesh",
@@ -31,10 +31,6 @@
     {
       "value": "03",
       "label": "University merit scholarships"
-    },
-    {
-      "value": "3.69",
-      "label": "Best term CGPA"
     }
   ]
 }
